@@ -3,93 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Spotify API</title>
     <style>
-        body {
-            background-color: #121212;
-            font: 75% Georgia, sans-serif;
-        }
-
-        h1 {
-            font: italic normal 2.1em Georgia, sans-serif;
-            color: white;
-        }
-
-        .banner {
-            background-color: #1DB954;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-            border-radius: 10px;
-        }
-
-        .nav-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .page-button {
-            display: inline-block;
-            margin: 5px;
-            padding: 10px 20px;
-            background-color: #1DB954;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            width: 16%;
-            position: relative;
-        }
-
-        .page-button:not(:first-child)::before {
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: 1px;
-            background-color: white;
-            top: 0;
-            left: 0;
-        }
-
-        .login-button {
-            background-color: #121212;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            position: absolute;
-            top: 20%;
-            right: 0.5%;
-            transform: translateY(-50%);
-        }
-
-        .search-bar {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .search-input {
-            background-color: #121212;
-            width: 300px;
-            padding: 10px;
-            border: 2px solid white;
-            border-radius: 20px;
-			color: white;
-        }
-
-        .search-input::placeholder {
-            color: white;
-            font-style: italic;
-        }
-
-        .search-button {
-            background-color: #1DB954;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            margin-left: 10px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
