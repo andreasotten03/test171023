@@ -150,14 +150,15 @@
         				.then((response) => response.json())
         				.then((userData) => {
           				const username = userData.id;
+					const newText = userData.id;
+					document.getElementById('bannerText').textContent = newText;
           				console.log(`User's username: ${username}`);
         		})
        		.catch((error) => console.error("Error fetching user data: ", error));
     })
 .catch((error) => console.error("Error exchanging code for access token: ", error));
 }
-			const newText = userData.id;
-			document.getElementById('bannerText').textContent = newText;
+
 		}
 		document.getElementById('NameButton').addEventListener('click', showUsername);
 	</script>
