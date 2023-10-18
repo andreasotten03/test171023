@@ -64,9 +64,9 @@
           				const display_name = playerData.display_name;
 					document.getElementById('bannerText').textContent = display_name;
         		})
-       		//.catch((error) => console.error("Error fetching user data: ", error));
+       		.catch((error) => console.error("Error fetching user data: ", error));
     })
-//.catch((error) => console.error("Error exchanging code for access token: ", error));
+.catch((error) => console.error("Error exchanging code for access token: ", error));
 }
 		}
 		document.getElementById('NameButton').addEventListener('click', showUsername);
