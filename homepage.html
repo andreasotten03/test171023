@@ -63,8 +63,6 @@ function showUsername() {
                     .then((playerData) => {
                         const display_name = playerData.display_name;
                         document.getElementById('bannerText').textContent = `Display Name: ${display_name}`;
-                        const followers = playerData.followers;
-                        document.getElementById('followersText').textContent = `Followers: ${followers.total}`;
                     })
                     .catch((error) => console.error("Error fetching user data: ", error));
             })
